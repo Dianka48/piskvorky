@@ -29,6 +29,10 @@ body {
   width: 360px;
 }
 
+.uvodni-obrazek {
+  border-radius: 5px 5px 0 0;
+}
+
 .pravidla,
 .zacatek {
   padding: 15px;
@@ -62,6 +66,7 @@ a {
 
 .pravidla {
   background-color: #1fcca4;
+  border-bottom: 1px solid #283e50;
 }
 
 .pravidla:hover {
