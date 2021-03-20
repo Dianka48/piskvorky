@@ -19,19 +19,19 @@ body {
 
 .text {
   background-color: #283e50;
+  padding: 0 10px 15px 10px;
 }
 
 .uvodni-obrazek,
 .pravidla,
 .zacatek,
 .text {
-  width: 350px;
+  width: 360px;
 }
 
 .pravidla,
-.zacatek,
-.text {
-  padding: 10px;
+.zacatek {
+  padding: 15px;
 }
 
 h1,
@@ -52,6 +52,7 @@ h1 {
   font-family: 'Lobster', cursive;
   font-weight: normal;
   font-size: 3em;
+  margin: 25px;
 }
 
 a {
@@ -63,12 +64,12 @@ a {
   background-color: #1fcca4;
 }
 
-.zacatek {
-  background-color: #0197f6;
-}
-
 .pravidla:hover {
   background-color: #1cbb96;
+}
+
+.zacatek {
+  background-color: #0197f6;
 }
 
 .zacatek:hover {
