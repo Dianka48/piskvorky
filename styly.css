@@ -24,7 +24,6 @@ body {
   padding: 0 10px 15px 10px;
 }
 
-
 .uvodni-obrazek,
 .pravidla,
 .zacatek,
@@ -47,18 +46,18 @@ p,
   color: #ffffff;
 }
 
-.text>ol,
+.text > ol,
 .pravidla-images figure figcaption {
   color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.4;
 }
 
-.text>ol {
+.text > ol {
   padding: 10px 40px 0 60px;
 }
 
-.text>ol>li {
+.text > ol > li {
   margin-bottom: 15px;
   padding-left: 10px;
 }
@@ -89,7 +88,8 @@ a {
 }
 
 .pravidla:hover,
-.pravidla:focus {
+.pravidla:focus,
+.pravidla:active {
   background-color: #1cbb96;
 }
 
@@ -98,7 +98,8 @@ a {
 }
 
 .zacatek:hover,
-.zacatek:focus {
+.zacatek:focus,
+.zacatek:active {
   background-color: #0090e9;
 }
 
@@ -108,7 +109,8 @@ a {
 }
 
 .uvod:hover,
-.uvod:focus {
+.uvod:focus,
+.uvod:active {
   background-color: #1cbb96;
 }
 
@@ -139,12 +141,12 @@ a {
 }
 
 @media only screen and (min-width: 800px) {
+
   .pravidla-text {
     width: 750px;
     padding: 10px 10px 20px 10px;
     font-size: 1.2em;;
   }
-
 
   .zacatek.zacatek-pravidla,
   .uvod {
