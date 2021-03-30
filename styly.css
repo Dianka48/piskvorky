@@ -22,28 +22,44 @@ body {
   padding: 0 10px 15px 10px;
 }
 
+
 .uvodni-obrazek,
 .pravidla,
 .zacatek,
+.uvod,
 .text {
   width: 360px;
 }
 
-.uvodni-obrazek {
+.uvodni-obrazek,
+.text.pravidla-text {
   border-radius: 5px 5px 0 0;
 }
 
 .pravidla,
-.zacatek {
+.zacatek,
+.uvod {
   padding: 15px;
 }
 
 h1,
 p,
 .pravidla,
-.zacatek {
+.zacatek,
+.uvod {
   text-align: center;
   color: #ffffff;
+}
+
+.text>ol,
+.pravidla-images figure figcaption {
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+.text>ol>li {
+  margin-bottom: 10px;
 }
 
 p,
@@ -69,7 +85,8 @@ a {
   border-bottom: 1px solid #283e50;
 }
 
-.pravidla:hover {
+.pravidla:hover,
+.pravidla:focus {
   background-color: #1cbb96;
 }
 
@@ -77,6 +94,53 @@ a {
   background-color: #0197f6;
 }
 
-.zacatek:hover {
+.zacatek:hover,
+.zacatek:focus {
   background-color: #0090e9;
+}
+
+.uvod {
+  background-color: #1fcca4;
+  border-bottom: 1px solid #283e50;
+}
+
+.uvod:hover,
+.uvod:focus {
+  background-color: #1cbb96;
+}
+
+.pravidla-images {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.pravidla-images figure img {
+  width: 100%;
+}
+
+.pravidla-images figure figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+@media only screen and (min-width: 800px) {
+  .pravidla-text {
+    width: 650px;
+    padding: 0 15px 20px 15px;
+  }
+
+
+  .zacatek.zacatek-pravidla,
+  .uvod {
+    width: 650px;
+  }
+
+  .pravidla-images figure {
+    margin: 10px;
+    width: calc(50% - 20px);
+  }
+
 }
