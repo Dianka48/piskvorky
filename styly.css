@@ -7,6 +7,7 @@
 body {
   background-image: linear-gradient(#615dad, #ffc8da);
   min-height: 100vh;
+  margin: 0;
 }
 
 .container {
@@ -15,6 +16,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  padding: 20px;
 }
 
 .text {
@@ -36,12 +38,6 @@ body {
   border-radius: 5px 5px 0 0;
 }
 
-.pravidla,
-.zacatek,
-.uvod {
-  padding: 15px;
-}
-
 h1,
 p,
 .pravidla,
@@ -55,17 +51,23 @@ p,
 .pravidla-images figure figcaption {
   color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.6;
+  line-height: 1.4;
+}
+
+.text>ol {
+  padding: 10px 40px 0 60px;
 }
 
 .text>ol>li {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  padding-left: 10px;
 }
 
 p,
 a {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
+  display: block;
 }
 
 h1 {
@@ -78,6 +80,7 @@ h1 {
 a {
   text-decoration: none;
   color: #ffffff;
+  padding: 15px;
 }
 
 .pravidla {
@@ -113,7 +116,11 @@ a {
   display: flex;
   flex-wrap: wrap;
   margin-top: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.pravidla-images figure {
+  margin: 20px;
 }
 
 .pravidla-images figure img {
@@ -123,24 +130,34 @@ a {
 .pravidla-images figure figcaption {
   text-align: center;
   font-style: italic;
-  font-size: 0.8em;
+}
+
+.znak {
+  filter: invert(100%);
+  width: 1em;
+  height: 1em;
 }
 
 @media only screen and (min-width: 800px) {
   .pravidla-text {
-    width: 650px;
-    padding: 0 15px 20px 15px;
+    width: 750px;
+    padding: 10px 10px 20px 10px;
+    font-size: 1.2em;;
   }
 
 
   .zacatek.zacatek-pravidla,
   .uvod {
-    width: 650px;
+    width: 750px;
   }
 
   .pravidla-images figure {
-    margin: 10px;
-    width: calc(50% - 20px);
+    margin: 15px;
+    width: calc(50% - 30px);
+  }
+
+  .pravidla-images figure figcaption {
+    font-size: 0.8em;
   }
 
 }
