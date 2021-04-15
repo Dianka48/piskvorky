@@ -152,7 +152,6 @@ a {
 
 .obsah__hra {
   max-width: 80vmin;
-  min-width: 300px;
   color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
@@ -204,17 +203,15 @@ a {
   box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.4);
   display: flex;
   flex-wrap: wrap;
+  width: 70vmin;
+  height: 70vmin;
 }
 
 .obsah__piskvorky-container button {
   border: 1px solid rgb(37, 37, 37);
   background-color: rgba(255, 255, 255, 0.3);
-  flex-basis: 10%;
+  width: 10%;
   padding: 0;
-  width: 10vmin;
-  height: 7.7vmin;
-  min-width: 24px;
-  min-height: 24px;
 }
 
 .obsah__piskvorky-container button:hover,
