@@ -141,6 +141,7 @@ a {
   filter: invert(100%);
   width: 1em;
   height: 1em;
+  vertical-align: -0.12em;
 }
 
 /* hra.html */
@@ -207,18 +208,44 @@ a {
   height: 70vmin;
 }
 
-.obsah__piskvorky-container button {
+.piskvorky-container__policko {
   border: 1px solid rgb(37, 37, 37);
   background-color: rgba(255, 255, 255, 0.3);
   width: 10%;
   padding: 0;
 }
 
-.obsah__piskvorky-container button:hover,
-.obsah__piskvorky-container button:focus,
-.obsah__piskvorky-container button:active {
+.policko--skryte:hover,
+.policko--skryte:focus,
+.policko--skryte:active {
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.45);
+}
+
+/* Hranie hry */
+@keyframes scale {
+  from {
+    background-size: 0%;
+  }
+  to {
+    background-size: 75%;
+  }
+}
+
+.piskvorky-container__policko--circle {
+  background: url(images/circle.svg);
+  background-repeat: no-repeat;
+  background-size: 75%;
+  background-position: center;
+  animation: scale 0.15s linear;
+}
+
+.piskvorky-container__policko--cross {
+  background: url(images/cross.svg);
+  background-repeat: no-repeat;
+  background-size: 75%;
+  background-position: center;
+  animation: scale 0.15s linear;
 }
 
 @media only screen and (min-width: 800px) {
