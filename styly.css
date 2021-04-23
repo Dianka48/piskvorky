@@ -161,6 +161,7 @@ a {
 }
 
 .obsah__text {
+  max-width: 70vmin;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -233,18 +234,14 @@ a {
 }
 
 .piskvorky-container__policko--circle {
-  background: url(images/circle.svg);
-  background-repeat: no-repeat;
+  background: url(images/circle.svg) no-repeat center center;
   background-size: 75%;
-  background-position: center;
   animation: scale 0.15s linear;
 }
 
 .piskvorky-container__policko--cross {
-  background: url(images/cross.svg);
-  background-repeat: no-repeat;
+  background: url(images/cross.svg) no-repeat center center;
   background-size: 75%;
-  background-position: center;
   animation: scale 0.15s linear;
 }
 
