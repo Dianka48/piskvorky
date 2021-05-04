@@ -108,7 +108,7 @@ const checkDiagonalLeftWin = (btnEl) => {
   while (currColumn > 0 && currRow > 0) {
     currColumn--;
     currRow--;
-    currIndex -= 11;
+    currIndex -= boardSize + 1;
     if (checkNeighbour(currIndex)) winningPoints++;
     else break;
   }
@@ -122,7 +122,7 @@ const checkDiagonalLeftWin = (btnEl) => {
   while (currColumn < boardSize - 1 && currRow < boardSize - 1) {
     currColumn++;
     currRow++;
-    currIndex += 11;
+    currIndex += boardSize + 1;
     if (checkNeighbour(currIndex)) winningPoints++;
     else break;
   }
@@ -141,7 +141,7 @@ const checkDiagonalRightWin = (btnEl) => {
   while (currColumn < boardSize - 1 && currRow > 0) {
     currColumn++;
     currRow--;
-    currIndex -= 9;
+    currIndex -= boardSize - 1;
     if (checkNeighbour(currIndex)) winningPoints++;
     else break;
   }
@@ -155,7 +155,7 @@ const checkDiagonalRightWin = (btnEl) => {
   while (currColumn > 0 && currRow < boardSize - 1) {
     currColumn--;
     currRow++;
-    currIndex += 9;
+    currIndex += boardSize - 1;
     if (checkNeighbour(currIndex)) winningPoints++;
     else break;
   }
